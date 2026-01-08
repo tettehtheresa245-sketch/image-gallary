@@ -1,0 +1,113 @@
+*css file*                                                                                                       body {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+      background: #bbafaf;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-style: italic;   
+      font-size: 3rem; 
+      margin-bottom: 40px;
+      background-color: #2B2B2B;
+      color:  white;
+      padding: 40px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 700;
+      height: 10vh;
+    }
+    small {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        font-weight: 500;
+        color: #c0b7b7;
+    } 
+   
+   /* Container holds headings on left and images on right */
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .headings-column {
+    display: flex;
+    font-style: italic;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px; 
+    min-width: 150px;
+  }
+  
+  .headings-column h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Right column with grouped images stacked vertically */
+  .images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    flex: 1; 
+  }
+  
+  .images-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Style individual images */
+  .images-row img {
+    width: 30vh;       
+    height: 40vh;      
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Optional hover effect on images */
+  .images-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+  
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #modalImg {
+      width: 33vw;
+      height: 98vh;
+      border-radius: 10px;
+    }
+
+    .modal span {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer; 
+    }
